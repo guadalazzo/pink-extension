@@ -3,6 +3,7 @@ chrome.storage.sync.get('dancingBack', (data) => {
   console.log(data);
 
   let style = document.createElement('style');
+  style.setAttribute("id","macaron");
   style.innerHTML =
 	'body {' +
 		'background: linear-gradient(270deg, #48bdff, #ff0571, #b745c3);' +

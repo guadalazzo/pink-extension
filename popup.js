@@ -21,7 +21,7 @@ clearButton.addEventListener('click',function(event) {
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.executeScript(
         tabs[0].id,
-        {code: 'document.body.style=" ";'});
+        {code: 'document.body.style=" ";document.getElementById("macaron").remove();'});
       });
 });
 fontPicker.addEventListener('change', function(event) {
