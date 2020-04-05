@@ -3,26 +3,34 @@
   background: #f2c7f0;
   color: #656565;
 }
+
 main {
-    width: 350px;
-    min-height: 350px;
+  width: 350px;
+  min-height: 350px;
 }
+
 header {
   margin: 10px;
   text-align: center;
 }
-header h2, header h1,header p {
-  margin: 5px; 
+
+header h2,
+header h1,
+header p {
+  margin: 5px;
 }
+
 header p {
   font-size: 14px;
 }
+
 section {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 div.fun {
   width: 100%;
   display: flex;
@@ -31,43 +39,58 @@ div.fun {
   align-items: center;
   margin-bottom: 15px;
 }
+
 .back-font {
   display: flex;
   margin-bottom: 15px;
   margin-left: 5px;
 }
-input#color-picker,input#font-picker {
+
+input#color-picker,
+input#font-picker {
   width: 23px;
   margin-left: 5px;
 }
+
 label {
   margin: 10px;
+  text-align: center;
 }
+
 button#clear {
   cursor: pointer;
-  font-size:1em;
+  font-size: 1em;
   width: 90%;
   margin: auto;
-  padding:20px;
+  padding: 20px;
   border: none;
   border-radius: 24px;
   background: linear-gradient(10deg, #dab3d8, #ffd5ff);
-  box-shadow:  6px 6px 9px #edc3eb, 
-              -6px -6px 9px #f7cbf5;
+  box-shadow: 6px 6px 9px #edc3eb,
+    -6px -6px 9px #f7cbf5;
   transition: .5s linear 0s
 }
+
 button#clear:hover {
   border-radius: 28px;
   background: #f2c7f0;
-  box-shadow: inset 7px 7px 14px #e8bfe6, 
-              inset -7px -7px 14px #fccffa;
+  box-shadow: inset 7px 7px 14px #e8bfe6,
+    inset -7px -7px 14px #fccffa;
 }
+
 #theme1 {
   width: 30px;
   height: 30px;
-    background: linear-gradient(270deg, #48bdff, #ff0571, #b745c3);
-    background-size: 100% 100%;
-    -webkit-animation: AnimationName 3s ease infinite;
-    -moz-animation: AnimationName 3s ease infinite;
-    animation: AnimationName 3s ease infinite;
+  background: linear-gradient(270deg, #48bdff, #ff0571, #b745c3);
+  background-size: 100% 100%;
+  -webkit-animation: AnimationName 3s ease infinite;
+  -moz-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 3s ease infinite;
+}
+
+#theme2 {
+  width: 30px;
+  height: 30px;
+  background-color: #963131;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='50' height='50'%3E%3Cpath fill='%233533ba' fill-opacity='0.4' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
 }

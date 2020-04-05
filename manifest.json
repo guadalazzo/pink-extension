@@ -21,7 +21,7 @@
 "content_scripts": [
   {
     "matches": ["http://*/*", "https://*/*"],
-    "js": ["content.js","animate.js"]
+    "js": ["content.js","animate.js", "clear.js", "anchorsBack.js"]
   }
 ],
 "icons": {

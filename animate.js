@@ -1,7 +1,6 @@
 
 chrome.storage.sync.get('dancingBack', (data) => {
-  console.log(data);
-
+if (data.dancingBack) {
   let style = document.createElement('style');
   style.setAttribute("id","macaron");
   style.innerHTML =
@@ -25,9 +24,7 @@ chrome.storage.sync.get('dancingBack', (data) => {
    ' 100% {'+
      ' filter: saturate(275%);} '+
     '};';
-
-  document.body.appendChild(style);
-  console.log(style,'style');
-  chrome.storage.sync.set({dancingBack: !data.dancingBack});
-  
+    document.body.appendChild(style);
+    chrome.storage.sync.set({dancingBack: !data.dancingBack});
+}
 });
