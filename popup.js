@@ -5,12 +5,7 @@ let theme3 = document.getElementById('theme3');
 let colorPicker = document.getElementById('color-picker');
 let fontPicker = document.getElementById('font-picker');
 let clearButton = document.getElementById('clear');
-chrome.storage.sync.get('color', function(data) {
-  // theme1.style.backgroundColor = "#333333";
-  // theme2.style.backgroundColor = "#671717";
-  // changeColor.style.backgroundColor = data.color;
-  // changeColor.setAttribute('value', data.color);
-});
+
 chrome.storage.sync.get('background', function(data) {
   if (data.background) {
     colorPicker.setAttribute('value', data.background);
@@ -22,7 +17,7 @@ chrome.storage.sync.get('font', function(data) {
   }
 });
 clearButton.addEventListener('click',function(event) {
-  chrome.storage.sync.remove(['backgound','font']);
+  chrome.storage.sync.remove(['backgound','font','dancingBack']);
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.executeScript(
         tabs[0].id,
@@ -46,14 +41,16 @@ colorPicker.addEventListener('change', function(event) {
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.executeScript(
         tabs[0].id,
-        {code: 'document.body.style.backgroundColor = "' + color + '";document.querySelectorAll("div").forEach(node=> node.style.backgroundColor =  "' + color + '");' });
+        {code: 'document.body.style.backgroundColor = "' + color + '";'});
       });
 });
 
-// changeColor.onclick = function(element) {
-//   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-//     chrome.tabs.executeScript(
-//         tabs[0].id,
-//         {file: 'content.js'});
-//   });
-// };
+theme1.onclick = function(element) {
+  chrome.storage.sync.set({dancingBack: true});
+
+  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+    chrome.tabs.executeScript(
+        tabs[0].id,
+        {file: 'animate.js'});
+  });
+};

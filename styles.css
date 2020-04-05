@@ -5,7 +5,7 @@
 }
 main {
     width: 350px;
-    height: 350px;
+    min-height: 350px;
 }
 header {
   margin: 10px;
@@ -20,12 +20,20 @@ header p {
 section {
   width: 100%;
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+div.fun {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
 }
 .back-font {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   margin-left: 5px;
 }
 input#color-picker,input#font-picker {
@@ -35,22 +43,31 @@ input#color-picker,input#font-picker {
 label {
   margin: 10px;
 }
-button {
+button#clear {
   cursor: pointer;
   font-size:1em;
   width: 90%;
   margin: auto;
   padding:20px;
   border: none;
-border-radius: 24px;
-background: linear-gradient(10deg, #dab3d8, #ffd5ff);
-box-shadow:  6px 6px 9px #edc3eb, 
-             -6px -6px 9px #f7cbf5;
+  border-radius: 24px;
+  background: linear-gradient(10deg, #dab3d8, #ffd5ff);
+  box-shadow:  6px 6px 9px #edc3eb, 
+              -6px -6px 9px #f7cbf5;
   transition: .5s linear 0s
 }
-button:hover {
+button#clear:hover {
   border-radius: 28px;
   background: #f2c7f0;
   box-shadow: inset 7px 7px 14px #e8bfe6, 
               inset -7px -7px 14px #fccffa;
+}
+#theme1 {
+  width: 30px;
+  height: 30px;
+    background: linear-gradient(270deg, #48bdff, #ff0571, #b745c3);
+    background-size: 100% 100%;
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
 }
