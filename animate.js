@@ -4,7 +4,7 @@ if (data.dancingBack) {
   let style = document.createElement('style');
   style.setAttribute("id","macaron");
   style.innerHTML =
-	'body {' +
+	'body,#content {' +
 		'background: linear-gradient(270deg, #48bdff, #ff0571, #b745c3);' +
 		'background-size: 600% 600%;' +
 		'animation: AnimationName 5s ease infinite;' +
