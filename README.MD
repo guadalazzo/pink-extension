@@ -18,31 +18,32 @@ All webs are designed different so, it doesn't fit all webs.
 
 ### 1. Clone this repo
 
+ `git clone git@github.com:guadalazzo/pink-extension.git`
    
 ### 2. Go to chrome://extensions/ Enable developer mode slide
 
-  <img src="https://cdnblog.webkul.com/blog/wp-content/uploads/2019/07/15065714/3-2.png" width="200" />
+  <img src="https://cdnblog.webkul.com/blog/wp-content/uploads/2019/07/15065714/3-2.png" width="800" />
   <br/>
   <br/>
 
 ### 3. Upload extension
 
-  <img src="https://cdnblog.webkul.com/blog/wp-content/uploads/2019/07/15065849/4-3.png" width="200" />
+  <img src="https://cdnblog.webkul.com/blog/wp-content/uploads/2019/07/15065849/4-3.png" width="800" />
  <br/>
    <br/>
 
 ### 4. Go to the location where you clone this repo
 
-   <img src="https://cdnblog.webkul.com/blog/wp-content/uploads/2019/07/15065856/5-3.png" width="200">
+   <img src="https://cdnblog.webkul.com/blog/wp-content/uploads/2019/07/15065856/5-3.png" width="800">
    <br/>
    <br/>
    
 ### 4. The extension will be installed now.
 
-  <img src="images/macaronpreview.png" width="200">
+  <img src="images/macaronpreview.png" width="800">
    <br/>
    <br/>
-  <img src="images/useexample.png" width="200">
+  <img src="images/useexample.png" width="800">
 
 
 ## Author
