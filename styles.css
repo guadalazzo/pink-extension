@@ -1,0 +1,56 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  background: #f2c7f0;
+  color: #656565;
+}
+main {
+    width: 350px;
+    height: 350px;
+}
+header {
+  margin: 10px;
+  text-align: center;
+}
+header h2, header h1,header p {
+  margin: 5px; 
+}
+header p {
+  font-size: 14px;
+}
+section {
+  width: 100%;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.back-font {
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+input#color-picker,input#font-picker {
+  width: 23px;
+  margin-left: 5px;
+}
+label {
+  margin: 10px;
+}
+button {
+  cursor: pointer;
+  font-size:1em;
+  width: 90%;
+  margin: auto;
+  padding:20px;
+  border: none;
+border-radius: 24px;
+background: linear-gradient(10deg, #dab3d8, #ffd5ff);
+box-shadow:  6px 6px 9px #edc3eb, 
+             -6px -6px 9px #f7cbf5;
+  transition: .5s linear 0s
+}
+button:hover {
+  border-radius: 28px;
+  background: #f2c7f0;
+  box-shadow: inset 7px 7px 14px #e8bfe6, 
+              inset -7px -7px 14px #fccffa;
+}

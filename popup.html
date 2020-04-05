@@ -2,20 +2,39 @@
 <html>
   <head>
       <meta charset="utf-8">
+      <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&family=Montserrat&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="styles.css">
-    <style>
-      button {
-        height: 30px;
-        width: 30px;
-        outline: none;
-      }
-    </style>
   </head>
   <body>
     <main>
-      <header>Pink Custom Backgrounds Extension</header>
+      <header>
+        <h1>Macaron</h1>
+        <p>Customize web styles</p>
+      </header>
+      <section>
+        <div class="back-font">
+          <label for="back">
+            Background
+            <input type="color" id="color-picker">
+          </label>
+          <label for="font">
+            Text color
+            <input type="color" id="font-picker">
+          </label>
+        </div>
+        <section>
+          <p>fun backgrounds</p>
+          <button id="theme1">crazy background</button>
+          
+        </section>
+        <button id="clear">CLEAR</button>
+          <!-- <button id="changeColor"></button>
+          
+          <button id="theme1"></button>
+          <button id="theme2"></button>
+          <button id="theme3"></button> -->
+      </section>
     </main>
-    <button id="changeColor"></button>
     <script src="popup.js"></script>
   </body>
 </html>
