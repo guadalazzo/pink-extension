@@ -13,6 +13,8 @@
 </p>
 
 A fun aplication for customize webs.
+This application works by adding background to body or #content
+All webs are designed different so, it doesn't fit all webs.
 
 ### 1. Clone this repo
 
@@ -40,7 +42,8 @@ A fun aplication for customize webs.
   <img src="images/macaronpreview.png" width="200">
    <br/>
    <br/>
-   
+  <img src="images/useexample.png" width="200">
+
 
 ## Author
 
